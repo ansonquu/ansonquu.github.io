@@ -721,11 +721,11 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: waline
 
 
 #---------------------------
@@ -807,11 +807,11 @@ valine:
 # Derived from Valine, with self-hosted service and new features
 # See: https://waline.js.org/
 waline:
-  serverURL: ''
+  serverURL: 'pl-ruby-psi.vercel.app'
   path: window.location.pathname
   meta: ['nick', 'mail', 'link']
   requiredMeta: ['nick']
-  lang: 'zh-CN'
+  lang: 'en-us'
   emoji: ['https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo']
   dark: 'html[data-user-color-scheme="dark"]'
   wordLimit: 0
@@ -1009,10 +1009,10 @@ links:
   # Member item of page
   items:
     - {
-      title: "",
-      intro: "",
-      link: "",
-      avatar: ""
+      title: "My Home Page",
+      intro: "My Chinese home page",
+      link: "https://anson.fun/",
+      avatar: "https://s2.loli.net/2024/03/18/qWmPAHUN2EeKxcr.png"
     }
 
   # 当成员头像加载失败时，替换为指定图片
@@ -1028,7 +1028,7 @@ links:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
